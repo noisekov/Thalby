@@ -7,32 +7,37 @@ html(lang="en")
         title Document
     body
         .wrapper
-            .container
-                header.header
-                    .content 
-                        nav.menu 
-                            ul.menu__item 
-                                li.menu__link Shop
-                                    a(href="") 
-                                li.menu__link Collections
-                                    a(href="") 
-                                li.menu__link Try a Free Guide
-                                    a(href="")                                 
-                                li.menu__link Stories
-                                    a(href="")
-                        .menu__logo
-                            a(href="#")
-                                img(src="/img/icon/logo.png", alt="logo")
-                        .menu__social 
-                            a(href="#")
-                                img(src="/img/icon/inst.png", alt="inst")
-                            a(href="#")
-                                img(src="/img/icon/search.png", alt="search")
-                            a(href="#")
-                                img(src="/img/icon/lock.png", alt="lock")
+            header.header
+                .header__container.container
+                    nav.menu 
+                        ul.menu__item 
+                            li.menu__link 
+                                a(href="") Shop 
+                            li.menu__link 
+                                a(href="") Collections
+                            li.menu__link 
+                                a(href="") Try a Free Guide                               
+                    .menu__logo
+                        a(href="#")
+                            img(src="/img/icon/logo.png", alt="logo")
+                    .menu__social 
+                        a(href="#")
+                            img(src="/img/icon/inst.png", alt="inst")
+                        a(href="http://google.com")
+                            img(src="/img/icon/search.png", alt="search")
+                        a(href="#")
+                            img(src="/img/icon/lock.png", alt="lock")
+            main.main
+                .main__container.container
+                    .main__body 
+                        .main__title
+                            h1 Fall deeper in love with humanity.
+                        .main__subtitle Get to know the world through our concise, informative and inspiring guides.
+                        a.main__button.button(href="#") Shop Now
+                    .main__img 
+                        img(src="/img/main.jpg", alt="")
 
 
 
-
-            
+            footer.footer лол
 script(src='./main.js')

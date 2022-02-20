@@ -20,10 +20,12 @@
     font-size: $s;
     font-weight: $w;
 }
+%newstyle {
+    color: red;
+}
 /*-----------------------------*/
 html,body {
 	font-family: 'Roboto';
-	@include fsw(20px, 400);
 }
 .wrapper {
 	min-height: 100%;
@@ -33,38 +35,50 @@ html,body {
 }
 .container {
 	margin: 0 auto;
-	max-width: 1100px;
-	padding: 0 15px;
+	max-width: 1094px;
 }
 
 .header {
-}
-.content {
-	display: flex;
-	flex-direction: row;
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 15px 15px;
+	}
 }
 .menu {
-
-
-		// .menu__item
-
+	display: flex;
+	@include fsw(16px, 700);
+	line-height: 26px;
+	color: #1C1B1B;
 		&__item {
 			display: flex;
 			flex-direction: row;
+			li {
+				margin: 0 28px 0 0;
+			}
+			li:last-child {
+				margin: 0;
+			}
 		}
-
-		// .menu__link
-
 		&__link {
+			a {
+				color: #1C1B1B;
+			}
+			a:hover {
+				color:#F0EFEB;
+				background: #1C1B1B;
+				padding: 5px 0px;
+				border-radius: 8px;
+			}
+			a:active {
+				color:#1C1B1B;
+				background: #F0EFEB;
+			}
 		}
-
-		// .menu__logo
-
 		&__logo {
+			display: flex;
 		}
-
-		// .menu__social
-
 		&__social {
 			display: flex;
 			flex-direction: row;
@@ -76,7 +90,36 @@ html,body {
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					max-width: 35px;
 				}
 			}
 		}
+}
+.main {
+	
+	display: flex;
+	flex: 1 1 auto;
+	&__container {
+		background: #F0EFEB;
+		
+	}
+	&__body 
+	&__title
+	&__subtitle
+	&__img {
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+}
+h1 {
+	@include fsw(60px,700)
+}
+
+
+a.main__button
+.button
+
+.footer {
 }
