@@ -96,11 +96,12 @@ html,body {
 		}
 }
 .main {
-	
 	display: flex;
 	flex: 1 1 auto;
 	&__container {
 		background: #F0EFEB;
+		display: flex;
+		flex-direction: row;
 		
 	}
 	&__body 
