@@ -374,5 +374,88 @@ h1 {
 		
 	}
 }
+/*-------block some--------*/
+.some {
+	display: flex;
+	flex: 1 1 auto;
+	margin: 190px 0 52px 0;
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+	&__subtitle {
+		display: block;
+		max-width: 436px;
+		text-align: center;
+		margin: 0 auto;
+
+	}
+	&__body {
+		margin: 70px 0 0 0;
+		display: flex;
+		flex-wrap: wrap;
+	} 
+	&__block {
+		display: flex;
+		flex: 0 1 338px;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 24px 110px 0;
+	}
+}
+
+/*---why nth-child dont work---*/
+.circle_bronze{
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background: #21F7EC;
+}
+.circle_green {
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background: #33D3BC;
+}
+.circle_blue{
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background: #18A5C6;
+}
+.circle_brown{
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background: #D38F62;	
+}
+.circle_red{
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background: #F94C43;
+}
+.circle_purpure {
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background: #D399FF;
+}
+.circle-text{
+		margin: 26px 0 0 0;
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 35px;
+		text-align: center;
+		color: #000000;
+}
+
 .footer {
 }
