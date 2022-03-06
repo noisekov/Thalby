@@ -275,6 +275,7 @@ h1 {
 	&__container {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	&__img {
 		flex: 1 1 385px;
@@ -317,14 +318,16 @@ h1 {
 	display: flex;
 	flex: 1 1 auto;
 	background: rgba(204, 204, 204, 0.6);
-	padding: 76px 0 51px 0;
+	padding: 76px 0 0 0;
 	&__container {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	&__img {
 		flex: 1 1 385px;
 		max-width: 385px;
+		margin: 0 0 51px 0;
 	}
 	&__body {
 		margin: 0 50px 0 0;
@@ -342,6 +345,7 @@ h1 {
 	&__link{
 		display: flex;
 		justify-content: end;
+		margin: 0 0 51px 0;
 	}
 }
 /*--------*/
@@ -353,6 +357,7 @@ h1 {
 	&__container {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	&__img {
 		flex: 1 1 385px;
@@ -456,6 +461,125 @@ h1 {
 		text-align: center;
 		color: #000000;
 }
-
+/*---------each block-----*/
+.each {
+	display: flex;
+	flex: 1 1 auto;
+	background: linear-gradient(#ffffff 50%, #F0F0F0 50%); 
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		display: block;
+		max-width: 705px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__body {
+		margin: 102px 0 0 0;
+		display: flex;
+		flex: 1 1 33.3%;
+		flex-wrap: wrap;
+	}
+	&__column {
+		margin: 0 100px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+	}	
+	&-img {
+		flex: 0 1 288px;
+	}
+	&__block {
+		max-width: 248px;
+		margin: 0 auto;
+	}
+	&-title {
+		margin: 35px 0 0 0;
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 26px;
+		text-align: center;
+		letter-spacing: 0.6px;
+		color: #000000;
+	}
+	&-subtitle {
+		margin: 40px 0 0 0;
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 19px;
+		line-height: 22px;
+		text-align: center;
+		color: #000000;
+	} 
+	&-link{
+		display: block;
+		margin: 44px 0 52px 0;
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		text-decoration-line: underline;
+		color: #000000;
+	}
+}
+/*-----keep block-----*/
+.keep {
+	display: flex;
+	flex: 1 1 auto;
+	margin: 79px 0 88px 0;
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+	&__title{
+		margin: 0 0 9px 0;
+	}
+	&__subtitle {
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 20px;
+		text-align: center;
+		color: #000000;
+		max-width: 496px;
+		margin: 0 0 26px 0;
+	}
+	&__body{
+		max-width: 366px;
+	}
+	&_input{
+		display: block;
+		margin: 0 0 16px 0;
+		position: relative;
+		max-width: 368px;
+		&-left{
+			position: absolute;
+			border: 1px solid #000000;
+			bottom: 0;
+			left: 0;
+		}
+		&-right{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			border: 1px solid #000000;
+		}
+		&-down{
+			margin: 18px 0 0 0	;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 1px solid #000000;
+		}
+	}
+	&_button{
+		padding: 7px 23px 10px 23px;
+		margin: 0 auto;
+	}
+}
 .footer {
 }
