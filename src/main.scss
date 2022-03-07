@@ -293,9 +293,6 @@ h1 {
 	&__subtitle {
 		margin: 0 0 40px 0;
 	}
-	&__link{
-
-	}
 }
 /*--class people culture power block--*/
 .subtitle{
@@ -374,9 +371,6 @@ h1 {
 	}
 	&__subtitle{
 		margin: 0 0 39px 0;
-	}
-	&__link{
-		
 	}
 }
 /*-------block some--------*/
@@ -561,20 +555,32 @@ h1 {
 			top: 0;
 			left: 0;
 			padding: 10px 50px 10px 10px;
+			margin: 0 0 0 30px ;
+			&:hover {
+				box-shadow: 1px 1px 1px #000000;
+			}
 		}
 		&-left{
 			position: absolute;
 			top: 0;
 			right: 0;
 			border: 1px solid #000000;
-			padding: 10px 50px 10px 10px;	
+			padding: 10px 50px 10px 10px;
+			margin: 0 30px 0 0 ;
+			&:hover {
+				box-shadow: 1px 1px 1px #000000;
+			}	
 		}
 		&-down{
 			position: absolute;
 			bottom: 0;
 			right: 0;
 			border: 1px solid #000000;
-			padding: 10px 50px 10px 10px;
+			padding: 10px 325px 10px 10px;
+			margin: 0 -245px 0 0;
+			&:hover {
+				box-shadow: 1px 1px 1px #000000;
+			}
 		}
 	}
 	&_button{
@@ -583,17 +589,15 @@ h1 {
 	}
 }
 .footer {
-	display: flex;
-	flex: 1 1 auto;
 	background:#020202;
 	&__container {
-		display: flex;
-		flex-direction: column;
 		padding: 51px 0 16px 0;
 	}
 	&__body {
 		display: flex;
 		margin: 0 0 5px 0;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 	&_column {
 		display: flex;
@@ -603,6 +607,7 @@ h1 {
 		margin: 0 0 25px 0;
 	}
 	&_block {
+		display: block;
 	}
 	&-link {
 		margin: 0 20px 0 0;
@@ -612,16 +617,13 @@ h1 {
 		img {
 			max-height: 100%;
 			max-width: 100%;
-
 		}
 	}
 	&_menu {
 		display: flex;
 		flex-direction: row;
 	}
-	&_down {}
-
-	&_text{
+	&_down {
 		font-family: 'Roboto';
 		font-weight: 400;
 		font-size: 14px;
@@ -649,15 +651,19 @@ h1 {
 }
 .menu_column {
 	&-left{
+		flex: 1 0 175px;
+		margin: 0 50px 0 0;
 		li {
 			font-family: 'Roboto';
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 21px;
 			color: #FFFFFF;
+			
 		}
 	}
 	&-right {
+		flex: 1 0 175px;
 		li {
 			font-family: 'Roboto';
 			font-weight: 400;
