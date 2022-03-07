@@ -143,12 +143,42 @@ html(lang="en")
                     .keep__title.title Keep in touch
                     .keep__subtitle Get our travel advice, global views and travel freebies in your inbox
                     .keep__body
-                        .keep_input
-                            input.keep_input-left(type="text") 
-                            input.keep_input-right(type="text")
-                            input.keep_input-down(type="email")
+                        input.keep_input-right(type="text")(placeholder="Last Name")
+                        input.keep_input-left(type="text")(placeholder="First Name")
+                        input.keep_input-down(type="email")(placeholder="Email")
                     a(href='#').keep_button.button Subscribe
-                    
-
-            footer.footer лол
+            footer.footer
+                .footer__container.container 
+                    .footer__body 
+                        .footer_column 
+                            a(href="#").footer_logo
+                                img(src="img/icon/logofooter.png", alt="")
+                            .footer_block 
+                                a.footer-link(href="")
+                                    img(src="img/icon/facebookfooter.png", alt="")
+                                a.footer-link(href="")
+                                    img(src="img/icon/instagramfooter.png", alt="") 
+                                a.footer-link(href="") 
+                                    img(src="img/icon/twitterfooter.png", alt="")
+                        .footer_menu 
+                            ul.menu_column-left
+                                li.footer-list 
+                                    a(href="#") about
+                                li.footer-list 
+                                    a(href="#") About Us
+                                li.footer-list 
+                                    a(href="#") Privacy Policy
+                                li.footer-list 
+                                    a(href="#") Terms and Conditions
+                                li.footer-list 
+                                    a(href="#") Write for Us
+                            ul.menu_column-right
+                                li.footer-list 
+                                    a(href="#") Contact
+                                li.footer-list 
+                                    a(href="#") Email hi@thalby.com
+                                li.footer-list 
+                                    a(href="#") Help
+                    .footer_down 
+                        .footer_text Thalby LLC © 2021
 script(src='./main.js')
