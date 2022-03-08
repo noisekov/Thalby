@@ -64,16 +64,19 @@ html,body {
 		&__link {
 			a {
 				color: #1C1B1B;
+				transition: all 0.3s ease 0.1s;
 			}
 			a:hover {
 				color:#F0EFEB;
 				background: #1C1B1B;
 				padding: 5px 0px;
 				border-radius: 8px;
+				transition: all 0.3s ease 0.1s;
 			}
 			a:active {
 				color:#1C1B1B;
 				background: #F0EFEB;
+				transition: all 0.3s ease 0.1s;
 			}
 		}
 		&__logo {
@@ -150,13 +153,17 @@ h1 {
 	font-size: 17px;
 	line-height: 20px;
 	color: #FFFFFF;
+	transition: all 0.3s ease 0.1s;
 	&:hover {
 		color: #000000;
 		background: rgba($color: #000000, $alpha: 0.3);
+		transition: all 0.3s ease 0.1s;
+		border: 1px solid rgba($color: #000000, $alpha: 0.3);
 	}
 	&:active {
 		background: #000000;
 		color: #FFFFFF;
+		transition: all 0.3s ease 0.1s;
 	}
 }
 /*----guides block------*/
@@ -558,6 +565,7 @@ h1 {
 			margin: 0 0 0 30px ;
 			&:hover {
 				box-shadow: 1px 1px 1px #000000;
+				transition: all 0.3s ease 0.1s;
 			}
 		}
 		&-left{
@@ -569,6 +577,7 @@ h1 {
 			margin: 0 30px 0 0 ;
 			&:hover {
 				box-shadow: 1px 1px 1px #000000;
+				transition: all 0.3s ease 0.1s;
 			}	
 		}
 		&-down{
@@ -580,6 +589,7 @@ h1 {
 			margin: 0 -245px 0 0;
 			&:hover {
 				box-shadow: 1px 1px 1px #000000;
+				transition: all 0.3s ease 0.1s;
 			}
 		}
 	}
@@ -659,7 +669,6 @@ h1 {
 			font-size: 14px;
 			line-height: 21px;
 			color: #FFFFFF;
-			
 		}
 	}
 	&-right {
