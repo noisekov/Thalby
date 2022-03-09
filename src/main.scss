@@ -416,6 +416,10 @@ h1 {
 	height: 70px;
 	border-radius: 35px;
 	background: #21F7EC;
+	transition: all 0.8s ease 0s;
+	&:hover {
+		transform: translate(10px, -10px);
+	}
 }
 .circle_green {
 	display: block;
@@ -423,6 +427,10 @@ h1 {
 	height: 70px;
 	border-radius: 35px;
 	background: #33D3BC;
+	transition: all 0.8s ease 0s;
+	&:hover {
+		transform: scale(1.3, 1.3);
+	}
 }
 .circle_blue{
 	display: block;
@@ -430,13 +438,21 @@ h1 {
 	height: 70px;
 	border-radius: 35px;
 	background: #18A5C6;
+	transition: all 0.8s ease 0s;
+	&:hover {
+		transform: scale(-1, 1);
+	}
 }
 .circle_brown{
 	display: block;
 	width: 70px;
 	height: 70px;
 	border-radius: 35px;
-	background: #D38F62;	
+	background: #D38F62;
+	transition: all 0.8s ease 0s;
+	&:hover {
+		transform: skew(10deg, 10deg);
+	}	
 }
 .circle_red{
 	display: block;
@@ -444,6 +460,10 @@ h1 {
 	height: 70px;
 	border-radius: 35px;
 	background: #F94C43;
+	transition: all 0.8s ease 0s;
+	&:hover {
+		transform: translate(-20px, 20px) skew(-7deg, -7deg);
+	}
 }
 .circle_purpure {
 	display: block;
@@ -451,6 +471,10 @@ h1 {
 	height: 70px;
 	border-radius: 35px;
 	background: #D399FF;
+	transition: all 0.8s ease 0s;
+	&:hover {
+		transform: translate(30px, 30px) scale(0.6);
+	}
 }
 .circle-text{
 		margin: 26px 0 0 0;
